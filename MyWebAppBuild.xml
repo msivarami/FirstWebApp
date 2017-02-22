@@ -21,4 +21,9 @@
         </ItemGroup>
         
     </Target>
+	<Import Project="lib\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" /> 
+	<Target Name="Zip"> <CreateItem Include="**\FirstWebAPI\obj\Release\Package\PackageTmp\*.*" > 
+	<Output ItemName="ZipFiles" TaskParameter="Include"/> 
+	</CreateItem> <Zip ZipFileName="FirstWebAPI.zip" WorkingDirectory="PackageTmp" Files="@(ZipFiles)" /> 
+	</Target>
 </Project>
