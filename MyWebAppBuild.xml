@@ -20,8 +20,5 @@
             <!-- <PackagedFiles Include="$(ProjectName)\obj\$(Configuration)\Package\PackageTmp\**\*.*"/> -->
         </ItemGroup>    
     </Target>
-    <Target Name="Zip" BeforeTargets="AfterBuild">
-        <Exec Command="PowerShell -command Compress-Archive @(ZipFiles, ',') $(ProjectName)\obj\$(Configuration)\Package\PackageTmp\FirstWebAPI.zip" />
-    </Target>
 	
 </Project>
