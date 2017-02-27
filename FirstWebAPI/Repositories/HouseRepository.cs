@@ -12,7 +12,7 @@ namespace SampleWebApiAspNetCore.Repositories
         {
             _houses.Add(1, new HouseEntity() { City = "Chennai", Id = 1, Street = "DLF-IT-PARK", ZipCode = 1234 });
             _houses.Add(2, new HouseEntity() { City = "Hyderabad", Id = 2, Street = "HimayathNagar", ZipCode = 1234 });
-            _houses.Add(3, new HouseEntity() { City = "Town3", Id = 3, Street = "Street3", ZipCode = 1234 });
+            _houses.Add(3, new HouseEntity() { City = "Bangalore", Id = 3, Street = "Banshankari", ZipCode = 1234 });
             _houses.Add(4, new HouseEntity() { City = "Town4", Id = 4, Street = "Street4", ZipCode = 1234 });
         }
 
